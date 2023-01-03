@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Homework Kate Bryl </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<link rel="stylesheet" type="text/css" href="jquery/css/easyui.css">
+
+<script type="text/javascript" src="jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="jquery/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="jquery/js/easyui-lang-ua.js"></script>
+
+<script type="text/javascript" src="student.js"></script>
+
+<style>
+   #tblStudent {
+    width: 80%; 
+    border-collapse: collapse; 
+   }
+   #tblStudent td, th {
+    padding: 3px; 
+    border: 1px solid #000; 
+   }
+   #tblStudent th {
+    background: #afd792; 
+    color: #333;  
+   }
+   #tblStudent tbody tr:hover {
+    background: #f3bd48; 
+    color: #fff; 
+   }
+   .hoverlines {
+    background-color:#f3bd48;
+}
+   .selectlines {
+    color: rgb(51, 51, 51);
+    background-color:#b8ceff;
+}
+</style>
+
+</head>
+<body>
+<form id="frmStudent">
+    <table cellpadding="5" align="center" width="60%" border="0">
+    <tbody>
+        <tr>
+            <td align="right">Name&nbsp;</td>
+            <td><input class="easyui-textbox" id="stud_sname" name="stud_sname" data-options="required:true"></td>
+        </tr>
+        <tr>
+            <td align="right">Programming language&nbsp;</td>
+            <td><input class="easyui-textbox" id="prog_lang" name="prog_lang" data-options="required:true"></td>
+        </tr>
+        <tr>
+            <td align="right">Data Base&nbsp;</td>
+            <td><input class="easyui-textbox" id="data_base" name="data_base" data-options="required:true"></td>
+        </tr>
+        <tr>
+            <td align="right">ID&nbsp;</td>
+            <td><input class="easyui-textbox" id="id_stud" name="id_stud" data-options="readonly:true"></td>
+        </tr>
+        <tr>
+            <td colspan=2>
+            <div style="margin-bottom:10px;" align="right">
+                <a href="#" class="easyui-linkbutton" id="btnSave" style="width:60px;height:34px;padding:10px">Create</a>
+                <a href="#" class="easyui-linkbutton" id="btnEdit" style="width:60px;height:34px;padding:10px">Edit</a>
+                <a href="#" class="easyui-linkbutton" id="btnDelete" style="width:120px;height:34px;padding:10px">Delete</a>
+                <a href="#" class="easyui-linkbutton" id="btnGetAll" style="width:120px;height:34px;padding:10px">Get All</a>
+                <a href="#" class="easyui-linkbutton" id="btnClear" style="width:120px;height:34px;padding:10px">Clear Table</a>
+            </div>
+            </td>
+        </tr>
+
+    </tbody></table>
+</form>
+
+
+<table id="tblStudent" cellpadding="5" align="center" width="60%" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Programming language</th>
+            <th>Data Base </th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+</body>
+</html>
